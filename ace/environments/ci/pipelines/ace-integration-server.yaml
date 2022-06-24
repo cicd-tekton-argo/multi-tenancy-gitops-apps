@@ -97,33 +97,33 @@ spec:
 
     - name: resolve-props
       params:
-        - name: is-source-directory
-          value: is-source
+      - name: is-source-directory
+        value: is-source
       runAfter:
         - clone-is-source-repo
       taskRef:
         kind: Task
         name: resolve-props
       workspaces:
-        - name: input
-          workspace: shared-workspace
+      - name: input
+        workspace: shared-workspace
 
     - name: build-bar
       params:
-        - name: is-source-directory
-          value: is-source
-        - name: is-application-name
-          value: $(tasks.resolve-props.results.is-application-name)
-        - name: is-project
-          value: $(tasks.resolve-props.results.is-project)
+      - name: is-source-directory
+        value: is-source
+      - name: is-application-name
+        value: $(tasks.resolve-props.results.is-application-name)
+      - name: is-project
+        value: $(tasks.resolve-props.results.is-project)
       runAfter:
         - resolve-props
       taskRef:
         kind: Task
         name: build-bar
       workspaces:
-        - name: workspace
-          workspace: shared-workspace
+      - name: workspace
+        workspace: shared-workspace
 
     - name: build-is-image
       params:
@@ -176,7 +176,7 @@ spec:
         - name: user-home
           value: "/root"
         - name: branch_name
-          value: $(context.pipeline.name)
+          value: $(context.pipeline.name)-$(context.pipelineRun.name)
         - name: repo-directory
           value: "gitops-repo"
       runAfter:
@@ -203,7 +203,7 @@ spec:
         - name: REPO_FULL_NAME
           value: $(params.gitops-apps-repo-full-name)
         - name: HEAD
-          value: $(context.pipeline.name)
+          value: $(context.pipeline.name)-$(context.pipelineRun.name)
         - name: BASE
           value: master
         - name: TITLE
