@@ -6,7 +6,7 @@ spec:
   designerFlowsOperationMode: disabled
   license:
     accept: true
-    license: L-KSBM-C37J2R
+    license: L-APEH-CFZE47
     use: CloudPakForIntegrationNonProduction
   replicas: 1
   router:
