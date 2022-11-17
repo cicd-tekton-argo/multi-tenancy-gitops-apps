@@ -6,9 +6,9 @@ spec:
   license:
     accept: true
     license: L-APEH-CFZE47
-    use: CloudPakForIntegrationNonProduction
+    use: CloudPakForIntegrationProduction
   useCommonServices: true
-  version: 12.0.1.0-r3
+  version: '12.0'
   storage:
     type: ephemeral
   replicas: 1
