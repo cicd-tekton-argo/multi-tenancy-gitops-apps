@@ -5,7 +5,7 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-APEH-CFZE47
+    license: L-APEH-C9NCK6
     use: CloudPakForIntegrationProduction
   useCommonServices: true
   version: '12.0'
