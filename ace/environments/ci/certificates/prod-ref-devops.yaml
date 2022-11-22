@@ -7,7 +7,7 @@ items:
   spec:
     commonName: appdomain.cloud
     dnsNames:
-    - '*.itzroks-664001x8ue-y5bhld-6ccd7f378ae819553d37d5f2ee142bd6-0000.au-syd.containers.appdomain.cloud'
+    - '*.itzroks-664001x8ue-xnrsk8-6ccd7f378ae819553d37d5f2ee142bd6-0000.au-syd.containers.appdomain.cloud'
     isCA: true
     issuerRef:
       kind: Issuer
