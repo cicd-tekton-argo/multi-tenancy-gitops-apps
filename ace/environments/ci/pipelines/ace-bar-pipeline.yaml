@@ -115,8 +115,7 @@ spec:
     - name: DOCKERFILE
       value: $(workspaces.source.path)/$(params.is-source-directory)/$(params.dockerfile-relative-path-to-src)
     - name: CONTEXT
-#      value: $(workspaces.source.path)/bars
-      value: /home/aceuser/bars
+      value: $(workspaces.source.path)/bars
     runAfter:
     - generate-bar
     taskRef:

@@ -136,8 +136,9 @@ spec:
         - name: DOCKERFILE
           value: $(workspaces.source.path)/is-infra/Dockerfile
         - name: CONTEXT
-#          value: $(workspaces.source.path)/bars
-          value: /home/aceuser/bars
+          value: $(workspaces.source.path)/bars
+        - name: BUILD_EXTRA_ARGS
+          value: "--isolation=chroot"
       runAfter:
         - clone-is-infra-repo
         - build-bar
