@@ -8,7 +8,7 @@ spec:
 
   - name: ace-base-image
     type: string
-    default: cp.icr.io/cp/appc/ace-server-prod:12.0.1.0-r3-20210722-112920
+    default: cp.icr.io/cp/appc/ace-server-prod@sha256:473bbea96e65025c11c91014ac8dd72641212bd2f5f35d661dca7b3242f4155c
 
   - name: is-source-repo-url
     type: string
