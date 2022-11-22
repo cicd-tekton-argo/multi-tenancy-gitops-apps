@@ -18,7 +18,7 @@ spec:
 
     - name: ace-base-image
       type: string
-      default: icr.io/appc-dev/ace-server:12.0.2.0-r2-20211115-123200-amd64
+      default: cp.icr.io/cp/appc/ace-server-prod@sha256:473bbea96e65025c11c91014ac8dd72641212bd2f5f35d661dca7b3242f4155c
       description: "Base image for App Connect Interprise."
 
     - name: gitops-apps-repo-full-name
