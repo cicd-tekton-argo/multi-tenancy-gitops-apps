@@ -6,7 +6,7 @@ spec:
   designerFlowsOperationMode: disabled
   license:
     accept: true
-    license: L-APEH-C9NCDM
+    license: L-APEH-C9NCK6
     use: CloudPakForIntegrationNonProduction
   replicas: 1
   router:
