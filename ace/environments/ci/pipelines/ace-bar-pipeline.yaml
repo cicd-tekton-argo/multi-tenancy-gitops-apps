@@ -8,7 +8,7 @@ spec:
 
   - name: ace-base-image
     type: string
-    default: cp.icr.io/cp/appc/ace-server-prod@sha256:473bbea96e65025c11c91014ac8dd72641212bd2f5f35d661dca7b3242f4155c
+    default: quay.io/falix_chong_ibm/ace-image:latest
 
   - name: is-source-repo-url
     type: string
